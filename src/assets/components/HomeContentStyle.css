@@ -1,0 +1,51 @@
+.mask{
+    width: 100%;
+    height: 100vh ;
+    position: relative;
+}
+.sistematetto{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+}
+.mask::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute ;
+    top: 0;
+    left: 0;
+    background-color: black;
+    opacity: 0.8;
+}
+.homec .content {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    text-align: center;
+}
+.homec .content h1 {
+    font-size: 4rem;
+    padding: 0.6rem 0 1.5rem;
+}
+.homec .content p {
+    font-size: 1.4rem;
+    font-weight: 200;
+    text-transform: uppercase;
+}
+.content .btn {
+    margin: 2rem 0.3rem;
+}
+@media screen and (max-width : 640px) {
+    .homec .content h1 {
+        font-size: 3rem;
+       
+    }
+    .homec .content p {
+        font-size: 1.4rem;
+    }
+    
+}
