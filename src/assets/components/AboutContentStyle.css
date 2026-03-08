@@ -1,0 +1,106 @@
+/* AboutContentStyle.css */
+.about-img{
+    width: 100%;
+    background: rgba(255, 0, 0, 0.5);
+    height: 60vh;
+    position: relative;
+}
+.about-img::before{
+    content: "";
+    background: url("https://images.unsplash.com/photo-1613665813446-82a78c468a1d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1158&q=80");
+    background-size: cover;
+    background-position: center center;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4rem 2rem;
+  background: #0a0a0a;
+  color: #f0ede8;
+}
+
+.mypic {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50%;           /* circle photo */
+  border: 3px solid rgb(15, 248, 244);    /* gold border */
+  box-shadow: 0 0 30px rgba(200, 169, 110, 0.25);
+  flex-shrink: 0;
+  margin-bottom: 1.5rem;
+}
+
+.right {
+  max-width: 750px;
+  text-align: center;
+}
+
+.right h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #ffffff;
+  margin-bottom: 0.3rem;
+  text-transform: uppercase;
+}
+
+.right h4 {
+  font-size: 1rem;
+  color: rgb(15, 248, 244);               /* gold accent */
+  letter-spacing: 4px;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+}
+
+.right p {
+  font-size: 0.95rem;
+  line-height: 1.9;
+  color: #b0aca6;
+  margin-bottom: 2.5rem;
+  text-align: left;
+}
+
+/* divider line before competenze */
+.right ul {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+  width: 100%;
+  margin-top: 0.5rem;
+}
+
+.skills h4 {
+  font-size: 1.2rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: rgb(15, 248, 244);
+  margin-top: 2rem;
+  margin-bottom: 0.8rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #333;
+  text-align: left;
+  width: 100%;
+}
+
+.skills ul li {
+  padding: 0.6rem 0;
+  border-bottom: 1px solid #1e1e1e;
+  color: #d0ccc7;
+  font-size: 0.92rem;
+  padding-left: 1.2rem;
+  position: relative;
+}
+
+.skills ul li::before {
+  content: "▸";                 /* custom bullet */
+  color: rgb(15, 248, 244);
+  position: absolute;
+  left: 0;
+}
